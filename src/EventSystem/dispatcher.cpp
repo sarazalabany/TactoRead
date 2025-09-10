@@ -17,8 +17,6 @@ class Dispatcher_C
 
 	}
 
-
-
 	/**
 	* send event to all observers
 	* @param event event to post
