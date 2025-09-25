@@ -15,7 +15,7 @@
 //
 //
 ///////////////////////////////////////////////////////////////////////////////////////
-template<typename T>
+template <typename T>
 class Event_C
 {
 
@@ -25,16 +25,14 @@ class Event_C
 		*********************************************************/
 		Event_C() = default;
 		Event_C(T type, const std::string& name = "");
-		const T type() const { return _type; };
 
-
-	public
+	public:
 		/********************************************************
 		*					Public Methods
 		*********************************************************/
-		inline const T type()const { return _type; };
-		inline const std::string& getName() const { return _name; };
-		virtual bool IsHandled() { return _handled; };
+		T type() const { return _type; }
+		const std::string& getName() const { return _name; }
+		virtual bool IsHandled() { return _handled; }
 
 
 	private:

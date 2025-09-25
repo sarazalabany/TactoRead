@@ -1,8 +1,8 @@
 #include "EventSystem/Event.h"
 
-Event_C(T type, const std::string& name = "")
-	:_type(type)
-	,_name(name)
+template<typename T>
+inline Event_C<T>::Event_C(T type, const std::string & name)
+:_type(type)
+, _name(name)
 {
-
 }
